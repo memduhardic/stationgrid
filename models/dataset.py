@@ -1,7 +1,7 @@
 """
 dataset.py
 
-Central data model for HEC GridMaker.
+Central data model for StationGrid.
 
 This module defines the Dataset class, which stores all project data
 required throughout the application. It is the single object that

@@ -1,7 +1,7 @@
 """
 shapefile_reader.py
 
-Read watershed polygons for HEC GridMaker.
+Read watershed polygons for StationGrid.
 """
 
 from pathlib import Path

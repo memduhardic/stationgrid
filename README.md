@@ -1,16 +1,16 @@
-# HEC GridMaker
+# StationGrid
 
-A desktop GIS tool (Python / PySide6) that turns point-based station observations — precipitation, temperature, or any numeric variable — into gridded fields over a watershed, and exports them as CF-compliant NetCDF for use in **HEC-HMS** gridded meteorology.
+A desktop GIS tool (Python / PySide6) that turns point-based station observations — precipitation, temperature, or any numeric variable — into gridded fields over a watershed, and exports them as CF-compliant NetCDF for use in the gridded meteorology.
 
 ## Features
 
 - **Station CSV import** with automatic detection of numeric variables
 - **Watershed import** (Shapefile, GeoJSON, GeoPackage — anything GeoPandas can read), with automatic UTM zone detection
-- **Regular grid generation** over the watershed extent at a user-defined resolution (meters), masked to the basin boundary
+- **Regular grid generation** over the watershed extent at a user-  defined resolution (meters), masked to the basin boundary
 - **IDW interpolation** (adjustable power), fully vectorized with a low-memory fallback for very fine grids
 - **Per-date caching** — stepping back to a date/variable already computed is instant
 - **Interactive map** — free scroll-zoom and drag-pan, independent layers (watershed, grid mesh, raster, stations, optional basemap)
-- **NetCDF export** (CF-1.8, compressed) with a `grid_mapping` CRS variable, ready for HEC-HMS / HEC-DSSVue grid import
+- **NetCDF export** (CF-1.8, compressed) with a `grid_mapping` CRS variable, ready for the grid import
 
 ## Workflow
 
@@ -25,8 +25,8 @@ Watershed ───┘
 Requires **Python 3.10+**.
 
 ```bash
-git clone https://github.com/<memduhardic/hec-gridmaker.git
-cd hec-gridmaker
+git clone https://github.com/<memduhardic/stationgrid.git
+cd stationgrid
 
 python -m venv .venv
 # Windows:
@@ -72,7 +72,7 @@ Defaults (grid size, IDW power, colormaps, basemap) live in [`config.py`](config
 ## Project structure
 
 ```
-hec-gridmaker/
+stationgrid/
 ├── main.py                  # entry point
 ├── config.py                # defaults
 ├── models/

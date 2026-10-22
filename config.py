@@ -1,5 +1,5 @@
 """
-Configuration file for HEC GridMaker
+Configuration file for StationGrid
 """
 
 from pathlib import Path
@@ -8,7 +8,7 @@ from pathlib import Path
 # Application
 # =============================================================================
 
-APP_NAME = "HEC GridMaker"
+APP_NAME = "StationGrid"
 VERSION = "0.2.0"
 
 # =============================================================================

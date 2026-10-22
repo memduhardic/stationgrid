@@ -65,7 +65,7 @@ class NetCDFWriter:
         ds["x"].attrs = {"units": "m", "standard_name": "projection_x_coordinate"}
         ds["y"].attrs = {"units": "m", "standard_name": "projection_y_coordinate"}
         ds.attrs["Conventions"] = "CF-1.8"
-        ds.attrs["source"] = "HEC GridMaker IDW interpolation"
+        ds.attrs["source"] = "StationGrid IDW interpolation"
 
         encoding = {variable_name: {"zlib": True, "complevel": 4}}
 

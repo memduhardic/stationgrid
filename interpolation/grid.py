@@ -1,7 +1,7 @@
 """
 grid.py
 
-Grid generation for HEC GridMaker.
+Grid generation for StationGrid.
 
 Creates a regular grid covering the watershed extent, in the projected
 CRS (meters), and masks out cells outside the watershed boundary.
