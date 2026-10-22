@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# App working folders (created automatically by config.py)
+data/
+output/
+
+# Generated outputs
+*.nc
+*.dss
+*.mod
+
+# Editor / OS
+.vscode/*
+!.vscode/launch.json
+.idea/
+.DS_Store
+Thumbs.db
